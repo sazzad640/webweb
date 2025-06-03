@@ -337,3 +337,27 @@ html body { background: var(--token-eb09dbbf-ef85-4b7f-81a5-44e9b062efb7, rgb(0,
     margin: 0 auto;
   }
 }
+
+
+
+/* Fix for mobile screen responsiveness */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  spline-viewer {
+    height: 100vh !important;
+  }
+
+  #main {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  img, video, iframe {
+    max-width: 100%;
+    height: auto;
+  }
+}
